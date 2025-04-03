@@ -169,7 +169,11 @@ button:hover {
     background-color: #d12e3f;
 }
 
-/* Success Message */
+.profile-info .btn {
+    margin: 15px; 
+
+}
+
 .hidden {
     display: none;
     text-align: center;
