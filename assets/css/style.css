@@ -52,11 +52,10 @@ nav {
 
 .nav-logo {
     width: 40px; 
-    height: auto;
-    margin-right: 20px; 
-    border-raduis: 50%;
-    object-fit: cover;
-    margin-right: 50px;
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 20px;
 }
 .menu-toggle {
     display: none;
