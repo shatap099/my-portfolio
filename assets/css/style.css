@@ -153,14 +153,15 @@ textarea {
     height: 150px;
 }
 button {
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 10px 20px;
     background-color: #d90429;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    width: auto;
+    display: inline-block;
 }
 
 button:hover {
