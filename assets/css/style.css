@@ -153,7 +153,6 @@ textarea {
     height: 150px;
 }
 button {
-    display: block;
     margin: 10px 0;
     padding: 10px 20px;
     background-color: #d90429;
@@ -161,7 +160,6 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 150%;
     font-size: 16px;
 }
 
