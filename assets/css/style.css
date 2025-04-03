@@ -1,102 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #4a4a4a;
+    background-image: url('https://www.transparenttextures.com/patterns/butterflies.png');
+}
 
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <button class="menu-toggle">☰</button>
-            <ul class="nav-links">
-                <li>
-                    <a href="#home">
-                        <img src="assets/images/logo.jpg" alt="Logo" class="nav-logo">
-                    </a>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>    
+/* Header Styling */
+header {
+    background-color: rgba(255, 182, 193, 0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
 
-    <section id="home" class="container">
-        <div class="profile">
-            <img src="assets/images/taehyung.jpg" alt="Kim Taeyung">
-            <div class="profile-info">
-                <h2>Kim Taeyung</h2>
-                <p>I am a singer, dancer, and actor. Applying as a choreographer.</p>
-            <div class="profile-info">
-                <button class="btn">Hire Me</button>
-                <button class="btn" onclick="scrollToContact()">Contact Me</button>
-            </div>
-    </section>
-    
-    <section id="about" class="container">
-        <div class="profile-container">
-            <img src="assets/images/about.jpg" alt="About Me" class="about-image">
-            <div class="profile-text">
-                <h2>About Me</h2>
-                <p>Hello! I'm Kim Taeyung, a passionate performer with a love for music, dance, and acting.</p>
-                <button class="btn" onclick="scrollToContact()">Contact Me</button>
-            </div>
-        </div>
-    </section>
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(255, 182, 193, 0.9);
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #ff69b4;
+    position: relative;
+}
 
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="assets/images/MusicVideoChoreography.jpg" alt="Music Video Choreography">
-                <p>Music Video Choreography 2024</p>
-            </div>
-            <div class="card">
-                <img src="assets/images/StagePerformance.jpg" alt="Stage Performance">
-                <p>Stage Performance Dance Showcase</p>
-            </div>
-            <div class="card">
-                <img src="assets/images/ShortFilm.jpg" alt="Short Film">
-                <p>Short Film Creative Director</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills" class="container">
-        <h2>My Skills</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="assets/images/Choreography.jpg" alt="Choreography">
-                <p>Choreography</p>
-            </div>
-            <div class="card">
-                <img src="assets/images/VocalPerformance.jpg" alt="Vocal Performance">
-                <p>Vocal Performance</p>
-            </div>
-            <div class="card">
-                <img src="assets/images/Acting.jpg" alt="Acting">
-                <p>Acting</p>
-            </div>
-        </div>
-    </section>
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
-    <section id="contact" class="container">
-        <h2>Get in Touch</h2>
-        <p>Email: kim.taeyung@email.com</p>
-        <p>Phone: +123-456-7890</p>
-        <a href="contact.html" class="btn">Contact Us</a> 
-    </section>
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
 
-    <footer>
-        <p>© 2025 My Portfolio. All rights reserved.</p>
-    </footer>
+.nav-links a:hover {
+    color: #ff69b4;
+    text-decoration: underline;
+}
 
-    <script src="assets/js/script.js"></script>
+.nav-logo {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-</body>
-</html>
+/* Main Container */
+.container {
+    padding: 50px;
+    text-align: center;
+}
+
+.profile img {
+    width: 220px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d14791;
+    transform: scale(1.05);
+}
+
+/* Grid Layout */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s;
+    color: black;
+    border: 2px dashed #ff69b4;
+    background-image: url('https://www.transparenttextures.com/patterns/flowers.png');
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+    color: black;
+    border: 2px solid #ff69b4;
+}
+
+h2 {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 182, 193, 0.9);
+    color: white;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
+    border-top: 3px solid #ff69b4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(255, 182, 193, 0.9);
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 15px 0;
+        border-radius: 0 0 12px 12px;
+    }
+}
