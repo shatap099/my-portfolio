@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <section id="home" class="container">
+        <div class="profile">
+            <img src="assets/images/taehyung.jpg" alt="Kim Taeyung">
+            <div class="profile-info">
+                <h2>Kim Taeyung</h2>
+                <p>I am a singer, dancer, and actor. Applying as a choreographer.</p>
+                <button class="btn">Hire Me</button>
+                <button class="btn" onclick="scrollToContact()">Contact Me</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="container">
+        <div class="profile-container">
+            <img src="assets/images/about.jpg" alt="About Me" class="about-image">
+            <div class="profile-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Kim Taeyung, a passionate performer with a love for music, dance, and acting.</p>
+                <button class="btn" onclick="scrollToContact()">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="assets/images/MusicVideoChoreography.jpg" alt="Music Video Choreography">
+                <p>Music Video Choreography 2024</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/StagePerformance.jpg" alt="Stage Performance">
+                <p>Stage Performance Dance Showcase</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/ShortFilm.jpg" alt="Short Film">
+                <p>Short Film Creative Director</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="container">
+        <h2>My Skills</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="assets/images/Choreography.jpg" alt="Choreography">
+                <p>Choreography</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/VocalPerformance.jpg" alt="Vocal Performance">
+                <p>Vocal Performance</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/Acting.jpg" alt="Acting">
+                <p>Acting</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Get in Touch</h2>
+        <p>Email: kim.taeyung@email.com</p>
+        <p>Phone: +123-456-7890</p>
+        <a href="contact.html" class="btn">Contact Us</a> 
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

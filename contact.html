@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">&#9776;</button>
+        </nav>
+    </header>
+    
+    <section class="contact-container">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions or inquiries, feel free to contact me.</p>
+        
+        <form id="contact-form">
+            <div class="input-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="input-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        
+        <div id="submission-details" class="hidden">
+            <h3>Your Submitted Information</h3>
+            <p id="submitted-info"></p>
+            <button id="back-btn" class="btn">Back</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
