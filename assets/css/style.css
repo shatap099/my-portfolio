@@ -1,222 +1,102 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffe5ec;
-    color: #000;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-header {
-    background-color: #d90429;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li>
+                    <a href="#home">
+                        <img src="assets/images/logo.jpg" alt="Logo" class="nav-logo">
+                    </a>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #d90429;
-    position: relative;
-}
+    <section id="home" class="container">
+        <div class="profile">
+            <img src="assets/images/taehyung.jpg" alt="Kim Taeyung">
+            <div class="profile-info">
+                <h2>Kim Taeyung</h2>
+                <p>I am a singer, dancer, and actor. Applying as a choreographer.</p>
+            <div class="profile-info">
+                <button class="btn">Hire Me</button>
+                <button class="btn" onclick="scrollToContact()">Contact Me</button>
+            </div>
+    </section>
+    
+    <section id="about" class="container">
+        <div class="profile-container">
+            <img src="assets/images/about.jpg" alt="About Me" class="about-image">
+            <div class="profile-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Kim Taeyung, a passionate performer with a love for music, dance, and acting.</p>
+                <button class="btn" onclick="scrollToContact()">Contact Me</button>
+            </div>
+        </div>
+    </section>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    padding: 0;
-}
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="assets/images/MusicVideoChoreography.jpg" alt="Music Video Choreography">
+                <p>Music Video Choreography 2024</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/StagePerformance.jpg" alt="Stage Performance">
+                <p>Stage Performance Dance Showcase</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/ShortFilm.jpg" alt="Short Film">
+                <p>Short Film Creative Director</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="container">
+        <h2>My Skills</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="assets/images/Choreography.jpg" alt="Choreography">
+                <p>Choreography</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/VocalPerformance.jpg" alt="Vocal Performance">
+                <p>Vocal Performance</p>
+            </div>
+            <div class="card">
+                <img src="assets/images/Acting.jpg" alt="Acting">
+                <p>Acting</p>
+            </div>
+        </div>
+    </section>
 
-.nav-links li {
-    margin: 0 10px;
-}
+    <section id="contact" class="container">
+        <h2>Get in Touch</h2>
+        <p>Email: kim.taeyung@email.com</p>
+        <p>Phone: +123-456-7890</p>
+        <a href="contact.html" class="btn">Contact Us</a> 
+    </section>
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
 
-.nav-links a:hover {
-    color: #ffe5ec;
-}
+    <script src="assets/js/script.js"></script>
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-}
-
-.nav-logo {
-    width: 40px; 
-    height: 40px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin-right: 20px;
-}
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.container {
-    padding: 50px;
-    text-align: center;
-}
-
-.profile img {
-    width: 200px;
-    border-radius: 50%;
-}
-
-.btn {
-    background-color: #d90429;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #a4031f;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.contact-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    text-align: center;
-    color: #d90429;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-textarea {
-    height: 150px;
-}
-button, .profile-info .btn { 
-    margin: 5px 0;
-    padding: 10px 20px;
-    background-color: #d90429;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: auto;
-    display: inline-block;
-}
-
-button:hover {
-    background-color: #d12e3f;
-}
-
-}
-
-.hidden {
-    display: none;
-    text-align: center;
-    color: green;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #d90429;
-    color: white;
-}
-@media (max-width: 768px) {
-    .nav-logo {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .grid {
-        flex-direction: column;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        background-color: #d90429;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 10px 0;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .contact-container {
-        padding: 15px;
-    }
-}
+</body>
+</html>
