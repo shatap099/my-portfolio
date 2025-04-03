@@ -152,7 +152,7 @@ input, textarea {
 textarea {
     height: 150px;
 }
-button {
+button, .profile-info .btn { 
     margin: 5px 0;
     padding: 10px 20px;
     background-color: #d90429;
@@ -167,9 +167,6 @@ button {
 button:hover {
     background-color: #d12e3f;
 }
-
-.profile-info .btn {
-    margin: 10px; 
 
 }
 
