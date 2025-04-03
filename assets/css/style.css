@@ -152,19 +152,10 @@ input, textarea {
 textarea {
     height: 150px;
 }
-.button-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-.hire-me {
-    margin-bottom: 15px;
-}
 button {
     display: block;
-    margin: 10px auto;
-    padding: 10px;
+    margin: 10px 0;
+    padding: 10px 20px;
     background-color: #d90429;
     color: white;
     border: none;
